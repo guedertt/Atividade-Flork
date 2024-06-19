@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script href="index.js">
+    function mudar(){
+        document.getElementById("no").innerText = "Sim";
+    }
+    function voltar(){
+        document.getElementById("no").innerText = "Não";
+    }
+    function video(){
+        window.location.href= "https://www.youtube.com/watch?v=2ug7w9cCy7A&pp=ygUGYmVuIDEw"
+    }
+
+    </script>
+</head>
+<body>
+    <main>
+        <div class="content">
+             <h1 class="titulo"> Me dá 100 reais?</h1>
+             <img src="https://i.pinimg.com/originals/7f/88/ca/7f88ca7f01fdb970faaae4754befc3c7.png" alt="me da 100reais">
+             <div class="btn-area">
+                <button id="yes" onclick="video()">Sim</button>
+                <button id="no" onmouseover="mudar()" onmouseout="voltar()">Não</button>
+             </div>
+        </div>
+    </main>
+</body>
+</html>
